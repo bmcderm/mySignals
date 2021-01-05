@@ -1,0 +1,117 @@
+.hidden {
+    display: none;
+}
+
+.btn-discord {
+    color: #ffffff;
+    background-color: #7289da;
+    border-color: #7289da;
+}
+.btn-discord:hover {
+    color: #ffffff;
+    background-color: #637cd6;
+    border-color: #637cd6;
+}
+.btn-discord:focus,
+.btn-discord.focus {
+    box-shadow: 0 0 0 0.15rem rgba(76, 143, 233, 0.5);
+}
+.btn-discord.disabled,
+.btn-discord:disabled {
+    color: #ffffff;
+    background-color: #7289da;
+    border-color: #7289da;
+}
+.btn-discord:not(:disabled):not(.disabled):active,
+.btn-discord:not(:disabled):not(.disabled).active,
+.show > .btn-discord.dropdown-toggle {
+    color: #ffffff;
+    background-color: #2b4bc2;
+    border-color: #2749c2;
+}
+.btn-discord:not(:disabled):not(.disabled):active:focus,
+.btn-discord:not(:disabled):not(.disabled).active:focus,
+.show > .btn-discord.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.15rem rgba(76, 143, 233, 0.5);
+}
+
+.btn-outline-discord {
+    color: #7289da;
+    border-color: #7289da;
+}
+.btn-outline-discord:hover {
+    color: #ffffff;
+    background-color: #637cd6;
+    border-color: #637cd6;
+}
+.btn-outline-discord:focus,
+.btn-outline-discord.focus {
+    box-shadow: 0 0 0 0.15rem rgba(44, 123, 229, 0.5);
+}
+.btn-outline-discord.disabled,
+.btn-outline-discord:disabled {
+    color: #7289da;
+    background-color: transparent;
+}
+.btn-outline-discord:not(:disabled):not(.disabled):active,
+.btn-outline-discord:not(:disabled):not(.disabled).active,
+.show > .btn-outline-discord.dropdown-toggle {
+    color: #ffffff;
+    background-color: #7289da;
+    border-color: #7289da;
+}
+.btn-outline-discord:not(:disabled):not(.disabled):active:focus,
+.btn-outline-discord:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-discord.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.15rem rgba(44, 123, 229, 0.5);
+}
+
+.discord-avatar {
+    position: relative;
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    font-size: 0.83333rem;
+}
+
+.discord-avatar-img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.discord-avatar-sm {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 0.83333rem;
+}
+
+.discord-avatar-lg {
+    width: 4rem;
+    height: 4rem;
+    font-size: 1.33333rem;
+}
+
+.discord-avatar-xl {
+    width: 5.125rem;
+    height: 5.125rem;
+    font-size: 1.70833rem;
+}
+
+.discord-avatar-xxl {
+    width: 5.125rem;
+    height: 5.125rem;
+    font-size: 1.70833rem;
+}
+@media (min-width: 768px) {
+    .discord-avatar-xxl {
+        width: 8rem;
+        height: 8rem;
+        font-size: 2.66667rem;
+    }
+}
+
+.modal-card-body {
+    overflow-y: auto;
+}
