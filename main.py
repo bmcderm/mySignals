@@ -19,4 +19,4 @@ def make_shell_context():
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)

@@ -1,0 +1,47 @@
+{% block doc %}
+<!DOCTYPE html>
+<html {% block html_attribs %}{% endblock html_attribs %}>
+{% block html %}
+
+<head>
+    {% block head %}
+    <title></title>
+
+    {% block metas %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    {% endblock metas %}
+
+    {% block scriptsHead %}
+    <!-- Favicon -->
+    <link href="{{ url_for('static', filename='favicon.png') }}" rel="icon" type="image/png">
+
+    <!-- Bootstrap -->
+    {% include "bootstrapScriptsImport.html" %}
+
+    <!-- Fonts and themes -->
+    <link async rel="stylesheet" href="{{url_for('static', filename='fonts/Feather/feather.css')}}">
+    <link async rel="stylesheet" href="{{url_for('static', filename='landkitTheme.css')}}">
+
+    {% endblock scriptsHead %}
+    {% endblock head %}
+</head>
+
+<body {% block body_attribs %}{% endblock body_attribs %}>
+    {% block body %}
+
+    {% block content %}
+    {% endblock %}
+
+    {% block scripts %}
+    {% include "bootstrapScriptsImport.html" %}
+
+    {% endblock scripts %}
+    {% endblock body %}
+</body>
+
+{% endblock html %}
+
+</html>
+{% endblock doc %}
