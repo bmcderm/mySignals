@@ -33,3 +33,6 @@ def createApp():
     app.register_blueprint(home_bp)
 
     return app
+
+
+from app import models
