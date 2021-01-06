@@ -1,12 +1,37 @@
 {% extends "home/base.html" %}
 
 {% block content %}
-<div class="main-content">
-    {% include "home/header.html" %}
-    
-    {% include "home/card.html" %}
+{% include "home/header.html" %}
+
+<div class="main-content mt-n11 pt-12 pb-8 pt-md-14 pb-md-11 bg-black bg-pattern-2">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-10 text-center">
+                <h1 class="display-1 font-weight-bold text-white aos-init aos-animate" data-aos="fade-up"
+                    data-aos-delay="50">
+                    mySignals
+                </h1>
+
+                <p class="lead text-gray-500 mb-6 mx-auto aos-init aos-animate" data-aos="fade-up" data-aos-delay="100"
+                    style="max-width: 500px;">
+                    Crypto currency signals
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center mt-5">
+        {% include "home/card.html" %}
+    </div>
+
+    <div class="row justify-content-center mt-5">
+        {% include "home/card.html" %}
+    </div>
+
+    <div class="row justify-content-center mt-5">
+        {% include "home/card.html" %}
+    </div>
 
     {% include "home/footer.html" %}
 </div>
-
 {% endblock %}

@@ -11943,8 +11943,8 @@ code {
   background-color: #161C2D !important; }
 
 .bg-pattern-2 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#161C2D)), url("../img/patterns/pattern-2.png");
-  background-image: linear-gradient(to bottom, transparent 0%, #161C2D 100%), url("../img/patterns/pattern-2.png"); }
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#161C2D)), url("./img/patterns/pattern-2.png");
+  background-image: linear-gradient(to bottom, transparent 0%, #161C2D 100%), url("./img/patterns/pattern-2.png"); }
 
 @media (min-width: 576px) {
   .border-sm {

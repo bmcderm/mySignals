@@ -24,7 +24,7 @@
     {% block cssLinks %}
     <link rel="stylesheet" href="{{url_for('static', filename='fonts/Feather/feather.css')}}">
     <link rel="stylesheet" href="{{url_for('static', filename='landkitTheme.css')}}">
-    <link rel="stylesheet" href="{{url_for('static', filename='base.css')}}" id="stylesheetDark">
+    <link rel="stylesheet" href="{{url_for('static', filename='base.css')}}">
     {% endblock cssLinks %}
 
     {% endblock scriptsHead %}
@@ -58,7 +58,6 @@
     <script>
         feather.replace();
         AOS.init();
-        var scroll = new SmoothScroll('a[href*="#"]');
     </script>
     {% endblock customScript %}
 
