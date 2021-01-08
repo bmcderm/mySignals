@@ -2,6 +2,7 @@ import app.models as Models
 
 from config import Config
 from app import createApp, DB
+from flask import Flask
 
 app = createApp()
 
