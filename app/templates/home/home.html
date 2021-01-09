@@ -1,7 +1,10 @@
 {% extends "home/base.html" %}
 
 {% block content %}
+
+{% with active_page="Home" %}
 {% include "home/header.html" %}
+{% endwith %}
 
 <div class="main-content mt-n12 pt-12 pb-8 pt-md-14 pb-md-11 bg-black bg-pattern-2">
     <div class="container">
@@ -9,29 +12,27 @@
             <div class="col-12 col-lg-10 text-center">
                 <h1 class="display-1 font-weight-bold text-white aos-init aos-animate" data-aos="fade-up"
                     data-aos-delay="50">
-                    <img src= {{ url_for('static', filename = 'img/mysignals_logo.png') }} width="275" height="100">
+                    <img src="{{ url_for('static', filename = 'img/mysignals_logo.png') }}" width="275" height="100">
                 </h1>
 
                 <p class="lead text-gray-500 mb-6 mx-auto aos-init aos-animate" data-aos="fade-up" data-aos-delay="100"
                     style="max-width: 500px;">
                     Cryptocurrency Signals
                 </p>
+
             </div>
         </div>
     </div>
+    <div id="allSignals">
 
-    <div class="row justify-content-center mt-5">
-        {% include "home/card.html" %}
-    </div>
-
-    <div class="row justify-content-center mt-5">
-        {% include "home/card.html" %}
-    </div>
-
-    <div class="row justify-content-center mt-5">
-        {% include "home/card.html" %}
     </div>
 
     {% include "home/footer.html" %}
 </div>
 {% endblock %}
+
+{% block scripts %}
+{{ super() }}
+
+<script src="{{url_for('static', filename='js/home/home.js')}}"></script>
+{% endblock scripts %}

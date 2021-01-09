@@ -16,6 +16,7 @@ def make_shell_context():
     """
     return {
         'DB': DB,
+        'Signal': Models.Signal,
     }
 
 

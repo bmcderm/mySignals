@@ -1,0 +1,71 @@
+{% block doc %}
+<!DOCTYPE html>
+<html {% block html_attribs %}{% endblock html_attribs %}>
+{% block html %}
+
+<head>
+    {% block head %}
+    <title>My Signals</title>
+
+    {% block metas %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    {% endblock metas %}
+
+    {% block scriptsHead %}
+    <!-- Favicon -->
+    <link href="{{ url_for('static', filename='favicon.png') }}" rel="icon" type="image/png">
+
+    <!-- Bootstrap -->
+    {% include "bootstrapScriptsImport.html" %}
+
+    <!-- Fonts and themes -->
+    {% block cssLinks %}
+    <link rel="stylesheet" href="{{url_for('static', filename='fonts/Feather/feather.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='landkitTheme.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='base.css')}}">
+    {% endblock cssLinks %}
+
+    {% endblock scriptsHead %}
+    {% endblock head %}
+</head>
+
+<body {% block body_attribs %}{% endblock body_attribs %}>
+    {% block body %}
+
+    {% block content %}
+    {% endblock %}
+
+    {% block scripts %}
+    {% include "bootstrapScriptsImport.html" %}
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Feather -->
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <!-- Smooth Scroll -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Scripts -->
+    <script src="{{url_for('static', filename='js/landkit/navbar.js')}}"></script>
+    <script src="{{url_for('static', filename='js/landkit/theme.js')}}"></script>
+    <script src="{{url_for('static', filename='js/util.js')}}"></script>
+
+    {% block customScript %}
+    <script>
+        feather.replace();
+        AOS.init();
+    </script>
+    {% endblock customScript %}
+
+    {% endblock scripts %}
+    {% endblock body %}
+</body>
+
+{% endblock html %}
+
+</html>
+{% endblock doc %}
