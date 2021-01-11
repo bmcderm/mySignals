@@ -23,7 +23,6 @@ class Signal(DB.Model):
     target1 = DB.Column(DB.Float, nullable=False)
     target2 = DB.Column(DB.Float, nullable=False)
     target3 = DB.Column(DB.Float, nullable=False)
-
     volume = DB.Column(DB.String(300), nullable=True)
     term = DB.Column(DB.String(20), nullable=False)
     risk = DB.Column(DB.String(20), nullable=False)
