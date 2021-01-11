@@ -8,15 +8,15 @@ import argparse
 from config import Config
 from colorama import Fore, init
 
-USERNAME = 'syntro271'
-DOMAIN_NAME = 'www.waffler.io'
+USERNAME = ''
+DOMAIN_NAME = ''
 BASE_FILEPATH = f'home/{USERNAME}/'
 API_URL = 'https://www.pythonanywhere.com'
 HEADERS = {
     'Authorization': f'Token {Config.PYTHON_ANYWHERE_API_TOKEN}',
 }
 
-# NOTE: .png, .tff,.woff, .woff2 FILES CANNOT BE UPLOADED! MUST BE DONE MANUALLY
+# NOTE: .png, .tff, .woff, .woff2 FILES CANNOT BE UPLOADED! MUST BE DONE MANUALLY
 EXTENSIONS = ['.py', '.html', '.css', '.js']
 IGNORE_FOLDERS = ['env', 'icons', 'logs',
                   '__pycache__', '.vscode', 'migrations']
