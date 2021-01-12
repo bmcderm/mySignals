@@ -29,6 +29,9 @@ def createApp():
     from app.errors import bp as errors_bp
     app.register_blueprint(errors_bp)
 
+    from app.auth import bp as auth_bp
+    app.register_blueprint(auth_bp)
+
     from app.home import bp as home_bp
     app.register_blueprint(home_bp)
 

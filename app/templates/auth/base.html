@@ -1,0 +1,57 @@
+{% block doc %}
+<!DOCTYPE html>
+<html {% block html_attribs %}{% endblock html_attribs %}>
+{% block html %}
+
+<head>
+    {% block head %}
+    <title>{{ title }}</title>
+
+    {% block metas %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    {% endblock metas %}
+
+    {% block scriptsHead %}
+    <!-- Favicon -->
+    <link href="{{ url_for('static', filename='favicon.png') }}" rel="icon" type="image/png">
+
+    <!--  CDNs -->
+    {% include "bootstrapCSSImport.html" %}
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+    <!-- Fonts and themes -->
+    <link rel="stylesheet" href="{{url_for('static', filename='fonts/feather/feather.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='dashkitTheme.css')}}" id="stylesheetDark">
+    <link rel="stylesheet" href="{{url_for('static', filename='base.css')}}" id="stylesheetDark">
+
+    {% endblock scriptsHead %}
+    {% endblock head %}
+</head>
+
+<body class="d-flex align-items-center bg-auth border-top border-top-2 border-primary" style="display: block;" {% block body_attribs %}{% endblock body_attribs %}>
+    {% block body %}
+
+    {% block content %}
+    {% endblock %}
+
+    {% block scripts %}
+    {% include "bootstrapScriptsImport.html" %}
+
+    <!-- Scripts -->
+    <script src="{{url_for('static', filename='js/dashkit/dashkit.js')}}"></script>
+    <script src="{{url_for('static', filename='js/util.js')}}"></script>
+
+    <script>
+        feather.replace();
+    </script>
+
+    {% endblock scripts %}
+    {% endblock body %}
+</body>
+
+{% endblock html %}
+
+</html>
+{% endblock doc %}
